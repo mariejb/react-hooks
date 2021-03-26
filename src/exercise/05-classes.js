@@ -6,7 +6,7 @@ import * as React from 'react'
 import VanillaTilt from 'vanilla-tilt'
 
 function Tilt({children}) {
-  const tiltRef = React.createRef()
+  const tiltRef = React.useRef()
 
   React.useEffect(() => {
     const tiltNode = tiltRef.current
